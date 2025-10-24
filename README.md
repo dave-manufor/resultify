@@ -33,9 +33,9 @@
 ## Installation
 
 ```bash
-npm install davemanufor/resultify
+npm install @davemanufor/resultify
 # or
-yarn add davemanufor/resultify
+yarn add @davemanufor/resultify
 ```
 
 ---
