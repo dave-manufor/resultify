@@ -1,7 +1,7 @@
-<h1 align="center">resultify</h1>
+<h1 align="center">Resultify</h1>
 
 <p align="center">
-	<strong>A lightweight, type-safe <code>Result</code> type for functional error handling in TypeScript.</strong><br>
+	<strong>A lightweight, type-safe <code>Result</code> type for functional error handling in TypeScript (and JS).</strong><br>
 	Provides <code>Ok</code> and <code>Err</code> variants for clear, expressive success and failure management in your code.
 </p>
 
