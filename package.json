@@ -1,0 +1,45 @@
+{
+  "name": "davemanufor/resultify",
+  "version": "1.0.0",
+  "description": "A lightweight, type-safe Result type for functional error handling in TypeScript. Provides Ok and Err variants for clear, expressive success and failure management in your code.",
+  "main": "build/index.js",
+  "module": "build/index.mjs",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "keywords": [
+    "result",
+    "typescript",
+    "error-handling",
+    "functional",
+    "ok",
+    "err"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dave-manufor/resultify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dave-manufor/resultify/issues"
+  },
+  "homepage": "https://github.com/dave-manufor/resultify#readme",
+  "scripts": {
+    "test": "jest",
+    "build": "tsup",
+    "prepare": "npm run build"
+  },
+  "author": "David Manufor",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
