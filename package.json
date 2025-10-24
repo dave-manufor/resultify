@@ -1,6 +1,6 @@
 {
   "name": "@davemanufor/resultify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, type-safe Result type for functional error handling in TypeScript. Provides Ok and Err variants for clear, expressive success and failure management in your code.",
   "main": "build/index.js",
   "module": "build/index.mjs",
