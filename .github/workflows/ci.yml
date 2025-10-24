@@ -1,4 +1,4 @@
-name: CI
+name: CI & Publish
 
 on:
   push:
@@ -27,8 +27,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dist
-          path: dist/
+          name: build
+          path: build/
 
   publish:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -46,7 +46,12 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Create .npmrc for publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to npm
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
